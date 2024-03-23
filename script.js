@@ -7,8 +7,20 @@ let restOfName = nome.slice(1, nome.length);
 
 restOfName.toLowerCase();
 
-console.log(restOfName);
-
 let capitalizedName = upperCase + restOfName;
 
 console.log("Hello, " + capitalizedName);
+
+/////////////////////////////////////////////////////////////////
+
+function lifeInWeeks(age) {
+	let yearsRemaining = 90 - age;
+	let days = yearsRemaining * 365;
+	let weeks = yearsRemaining * 52;
+	let months = yearsRemaining * 12;
+
+	console.log( "You have " + days + " days, " + weeks + " weeks, and " + months + "months left.");
+
+}
+
+lifeInWeeks(27);
