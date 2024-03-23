@@ -24,3 +24,15 @@ function lifeInWeeks(age) {
 }
 
 lifeInWeeks(27);
+
+/////////////////////////////////////////////////////////////////
+
+function bmiCalculator(weight, height)
+{
+    let bmi = weight / (height * height)
+    
+    return Math.round(bmi)
+}
+
+let bmi = bmiCalculator(67, 1.7);
+console.log(bmi);
