@@ -45,4 +45,35 @@ function bmiCalculator(weight, height)
 }
 
 let bmi = bmiCalculator(67, 1.7);
-console.log(bmi);
+
+
+///////////////////////////////////////////////////
+
+//Se year : 4 ritorna 0 = leap year else not a leap year
+//se year : 4 ritorna 0 allora year diviso cento deve ritornare 0
+//se anche year : 100 torna 0 deve anche year : 400 tornare 0
+
+function isLeap(year) {
+       
+		if(year % 4 === 0)
+		{ if(year % 100 === 0)
+		  { if(year % 400 === 0)
+			{
+			 return "leap year"
+		    } else {
+			  return "not a leap"
+		    }
+			
+		  } else
+		  {
+			 return "leap year"
+		  }
+			
+		} else
+		{
+			return "not a leap year"
+		}
+	
+	}
+
+console.log(isLeap(2000));
