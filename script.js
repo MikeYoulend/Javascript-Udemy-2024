@@ -31,7 +31,17 @@ function bmiCalculator(weight, height)
 {
     let bmi = weight / (height * height)
     
-    return Math.round(bmi)
+	if(bmi < 18.5)
+	{
+		return console.log("Your BMI is " + Math.round(bmi) + ", so you are underweight.");
+	} else if (bmi > 18.5 && bmi < 24.9)
+	{
+		return console.log("Your BMI is " + Math.round(bmi) + ", so you have a normal weight.");
+	} else ( bmi > 24.9)
+	{ 
+		return console.log("Your BMI is " + Math.round(bmi) + ", so you are overweight.");
+	}
+    
 }
 
 let bmi = bmiCalculator(67, 1.7);
