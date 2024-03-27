@@ -118,3 +118,16 @@ fizzBuzz();
 fizzBuzz();
 fizzBuzz();
 
+/////////////////////////////////////////////////
+
+
+function whosPaying(names) {
+    
+		let numberOfPeople = names.length;
+		let randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
+		let randomPerson = names[randomPersonPosition];
+
+		return randomPerson + " is going to buy all lunch";
+	}
+
+	console.log(whosPaying(["Michele", "Dani", "Ravi", "TuCheStaiGiudicandoIlMioCodice"]));
