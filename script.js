@@ -19,7 +19,7 @@ function lifeInWeeks(age) {
 	let weeks = yearsRemaining * 52;
 	let months = yearsRemaining * 12;
 
-	console.log( "You have " + days + " days, " + weeks + " weeks, and " + months + "months left.");
+	console.log( "You have " + days + " days, " + weeks + " weeks, and " + months + " months left.");
 
 }
 
@@ -85,7 +85,7 @@ let count = 1;
 
 function fizzBuzz(){
 	
-	
+	while(count <=30){
 	
 	if(count % 3 === 0 && count % 5 === 0){
 		output.push("Fizzbuzz")
@@ -97,26 +97,13 @@ function fizzBuzz(){
 		output.push(count);
 	}
 	count++;
+}
 
 	console.log(output);
 }
 
 fizzBuzz();
-fizzBuzz();
-fizzBuzz();
-fizzBuzz();
-fizzBuzz();
-fizzBuzz();
-fizzBuzz();
-fizzBuzz();
-fizzBuzz();
-fizzBuzz();
-fizzBuzz();
-fizzBuzz();
-fizzBuzz();
-fizzBuzz();
-fizzBuzz();
-fizzBuzz();
+
 
 /////////////////////////////////////////////////
 
@@ -131,3 +118,19 @@ function whosPaying(names) {
 	}
 
 	console.log(whosPaying(["Michele", "Dani", "Ravi", "TuCheStaiGiudicandoIlMioCodice"]));
+
+///////////////////////////////////////////////////
+
+function BottlesOfBeerSong(){
+
+	let bottleOfBeer = 99;
+	let Song = "";
+	while(bottleOfBeer >= 0){
+		Song += bottleOfBeer + " Bottles of beer on the wall, " + bottleOfBeer + " bottles of beer. Take one down and pass it around, " +  bottleOfBeer + " on the wall                                            "
+		bottleOfBeer--;
+	}
+
+	return Song;
+}
+
+console.log(BottlesOfBeerSong());
