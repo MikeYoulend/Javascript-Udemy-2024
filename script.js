@@ -166,3 +166,30 @@ function BottlesOfBeerSong(){
 }
 
 //console.log(BottlesOfBeerSong());
+
+//////////////////////////////////////////////////
+
+function fibonacciGenerator(n){
+
+	let output = [];
+	if(n === 1){
+		output = [0]; // se n = 1 output[0]
+	} else if(n === 2) {
+		output = [0, 1]; // se n = 2 output[0, 1]
+	}
+	else { //per tutti gli altri casi
+		output = [0, 1]; 
+
+		for(let i = 2; i < n; i++){ //partendo da 2 finche i è minore di n, aggiungi 1
+			//pusha nell'array di output
+			//un array di 4 numeri è = a 4 spazi
+			//ma siccome si parte da 0 a contare in programmazione
+			//il meno 1 serve per prendere quello all'ultimo posto
+			//il meno 2 al penultimo
+		output.push(output[output.length - 2] + output[output.length - 1]); //[0, 1, 1]
+		}
+	}
+	return output;
+}
+
+console.log(fibonacciGenerator(4));
