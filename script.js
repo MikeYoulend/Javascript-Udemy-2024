@@ -83,9 +83,9 @@ console.log(isLeap(2000));
 let output = [];
 let count = 1;
 
-function fizzBuzz(){
+function fizzBuzz1(){
 	
-	while(count <=30){
+	while(count <= 30){
 	
 	if(count % 3 === 0 && count % 5 === 0){
 		output.push("Fizzbuzz")
@@ -102,10 +102,42 @@ function fizzBuzz(){
 	console.log(output);
 }
 
-fizzBuzz();
+fizzBuzz1();
 
 
 /////////////////////////////////////////////////
+
+
+
+
+
+function fizzBuzz2(){
+
+	let output = [];
+	
+	for(let count = 1; count <= 51; count++){
+	
+	if(count % 3 === 0 && count % 5 === 0){
+		output.push("Fizzbuzz")
+	} else if(count % 5 === 0){
+		output.push("Buzz")
+	} else if(count % 3 === 0){
+		output.push("Fizz")
+	} else{
+		output.push(count);
+	}
+	count++;
+}
+
+	console.log(output);
+}
+
+fizzBuzz2();
+
+
+
+
+////////////////////////////////////////////////
 
 
 function whosPaying(names) {
@@ -133,4 +165,4 @@ function BottlesOfBeerSong(){
 	return Song;
 }
 
-console.log(BottlesOfBeerSong());
+//console.log(BottlesOfBeerSong());
